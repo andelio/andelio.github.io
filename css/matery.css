@@ -579,15 +579,13 @@ header .go-back i {
     line-height: 1.2em;
     margin-bottom: 20px;
     position: relative;
-    color: #ef6c00;
-    opacity: 0.6;
 }
 
 .bg-cover .description {
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 1.4em;
-    color: #ef6c00;
+    color: #fff;
 }
 
 .bg-cover .post-title {
