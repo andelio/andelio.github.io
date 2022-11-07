@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>algorithm</title>
+      <link href="/2022/11/07/algorithm/"/>
+      <url>/2022/11/07/algorithm/</url>
+      
+        <content type="html"><![CDATA[<h3 id="两数之和"><a href="#两数之和" class="headerlink" title="两数之和"></a>两数之和</h3><h2 id="给定一个整数数组-nums-和一个整数目标值-target，请你在该数组中找出-和为目标值-target-的那-两个-整数，并返回它们的数组下标。"><a href="#给定一个整数数组-nums-和一个整数目标值-target，请你在该数组中找出-和为目标值-target-的那-两个-整数，并返回它们的数组下标。" class="headerlink" title="给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。"></a>给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。</h2><h2 id="你可以假设每种输入只会对应一个答案。"><a href="#你可以假设每种输入只会对应一个答案。" class="headerlink" title="你可以假设每种输入只会对应一个答案。"></a>你可以假设每种输入只会对应一个答案。</h2><h2 id="但是，数组中同一个元素在答案里不能重复出现。你可以按任意顺序返回答案。"><a href="#但是，数组中同一个元素在答案里不能重复出现。你可以按任意顺序返回答案。" class="headerlink" title="但是，数组中同一个元素在答案里不能重复出现。你可以按任意顺序返回答案。"></a>但是，数组中同一个元素在答案里不能重复出现。你可以按任意顺序返回答案。</h2><h2 id="示例-1："><a href="#示例-1：" class="headerlink" title="示例 1："></a>示例 1：</h2><h2 id="输入：nums-2-7-11-15-target-9"><a href="#输入：nums-2-7-11-15-target-9" class="headerlink" title="输入：nums = [2,7,11,15], target = 9"></a>输入：nums = [2,7,11,15], target = 9</h2><h2 id="输出：-0-1"><a href="#输出：-0-1" class="headerlink" title="输出：[0,1]"></a>输出：[0,1]</h2><h2 id="解释：因为-nums-0-nums-1-9-，返回-0-1-。"><a href="#解释：因为-nums-0-nums-1-9-，返回-0-1-。" class="headerlink" title="解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 。"></a>解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 。</h2><p>function twoSum(nums: number[], target: number): number[] {<br>  const map = new Map();<br>  for(let i = 0; i &lt; nums.length; i++) {<br>      map.set(nums[i], i);<br>  }<br>  for(let i = 0; i &lt; nums.length; i++) {<br>      const diff = target - nums[i];<br>      if(map.has(diff) &amp;&amp; map.get(diff) !== i) {<br>          return [i, map.get(diff)];<br>      }<br>  }<br>}</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>First article</title>
       <link href="/2022/10/12/post/"/>
       <url>/2022/10/12/post/</url>
